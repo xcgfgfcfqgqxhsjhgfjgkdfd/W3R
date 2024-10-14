@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Keyboard Events</h1>
+<h2>The ctrlKey Property</h2>
+
+<p>Press a key on the keyboard in the input field to find out if the CTRL key was pressed.</p>
+
+<input type="text" onkeydown="isKeyPressed(event)">
+
+<p id="demo"></p>
+
+<script>
+function isKeyPressed(event) {
+  const x = document.getElementById("demo");
+  if (event.ctrlKey) {
+    x.innerHTML = "The CTRL key was pressed!";
+  } else {
+    x.innerHTML = "The CTRL key was NOT pressed!";
+  }
+}
+</script>
+
+</body>
+</html>
